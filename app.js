@@ -53,14 +53,6 @@ gulp.start('images');
 gulp.start('fonts');
 //////// End Build ////////////
 
-/* Push to GitHub */
-var push = require('git-push');
- 
-push('./app', 'http://github.com/example/example.github.io', function() {
-  console.log('Done!');
-});
-/* End push to GitHub */
-
 var redisClient = require('./redis.js');
 var encryption = require('./encryption.js');
 var express = require('express');
