@@ -1,0 +1,20 @@
+{
+  "name": "node-test",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "3.x"
+  },
+  "description": "test",
+  "main": "app.js",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-build": "^0.5.3",
+    "gulp-if": "^2.0.0"
+  },
+  "scripts": {
+    "test": "node app"
+  },
+  "author": "Solon Mikkides",
+  "license": "ISC"
+}

@@ -1,0 +1,1 @@
+var redis=require("redis"),host="localhost",port=6379;client=redis.createClient(port,host),client.auth("Salamina1948"),client.on("error",function(e){console.log("Error "+e)}),exports.set=function(e,t){return client.set(e,t)},exports.del=function(e){client.del(e)},exports.get=function(e){return client.get(e)};

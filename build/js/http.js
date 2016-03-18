@@ -1,0 +1,1 @@
+var HTTPRequest=function(){function n(){var n=this;n.url="",n.method="",n.options={},n.userToken="",n.makeCall=function(){$.ajax({method:n.method,url:n.url,data:n.options}).done(function(o){n.callBack(o)})}}return n}();

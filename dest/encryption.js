@@ -1,0 +1,1 @@
+var CryptoJS=require("crypto-js"),SHA256=require("crypto-js/sha256"),pass="ba8@3589*<)GT.D";exports.encrypt=function(r){return CryptoJS.AES.encrypt(JSON.stringify([r]),pass)},exports.decrypt=function(r){var t=CryptoJS.AES.decrypt(r.toString(),pass);return JSON.parse(t.toString(CryptoJS.enc.Utf8))};
