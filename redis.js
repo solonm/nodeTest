@@ -4,7 +4,7 @@ var port = 6379;
 var RedisNotifier = require('redis-notifier');
 
 client = redis.createClient(port, host);
-client.auth('Salamina1948');
+client.auth('');
 client.on("error", function (err) {
     console.log("Error " + err);
 });
